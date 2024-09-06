@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadwal Pelaksanaan Kampung</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #0056b3;
+        }
+        .schedule-entry {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+            background-color: #f4f4f4;
+        }
+        .schedule-entry h2 {
+            margin-top: 0;
+            color: #0056b3;
+        }
+        .schedule-entry label {
+            display: block;
+            margin: 5px 0;
+        }
+        .schedule-entry input,
+        .schedule-entry select,
+        .schedule-entry textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 10px 0;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .schedule-entry textarea {
+            height: 80px;
+            resize: vertical;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Jadwal Pelaksanaan Kampung</h1>
+        <!-- Template Jadwal untuk Kampung 1 sampai 20 -->
+        <div class="schedule-entry">
+            <h2>Nama Kampung: Kampung Gunung Raya</h2>
+            <label for="koordinator-1">Koordinator Kampung:</label>
+            <input type="text" id="koordinator-1" name="koordinator-1" value="HOLDIN">
+            <label for="hari-koordinasi-1">Hari Koordinasi:</label>
+            <input type="text" id="hari-koordinasi-1" name="hari-koordinasi-1" value="Senin">
+            <label for="tanggal-koordinasi-1">Tanggal Koordinasi:</label>
+            <input type="date" id="tanggal-koordinasi-1" name="tanggal-koordinasi-1">
+            <label for="jam-koordinasi-1">Jam Koordinasi (24 jam, WIB):</label>
+            <input type="time" id="jam-koordinasi-1" name="jam-koordinasi-1">
+            <label for="keterangan-1">Keterangan Tambahan:</label>
+            <textarea id="keterangan-1" name="keterangan-1" placeholder="Masukkan keterangan tambahan"></textarea>
+            <label>Status Pleno:</label>
+            <input type="radio" id="belum-pleno" name="pleno-1" value="Belum">Belum Pleno
+            <input type="radio" id="sudah-pleno" name="pleno-1" value="Sudah">Sudah Pleno
+            <label>Jumlah Pemilih Laki-laki:</label>
+            <input type="number" name="laki-laki-1" min="0" max="100000">
+            <label>Jumlah Pemilih Perempuan:</label>
+            <input type="number" name="perempuan-1" min="0" max="100000">
+            <label>Jumlah Pemilih Disabilitas:</label>
+            <input type="number" name="disabilitas-1" min="0" max="100000">
+            <label>Jumlah Pemilih Potensial:</label>
+            <input type="number" name="potensial-1" min="0" max="100000">
+        </div>
+        <!-- Repeat the above block for each Kampung up to Kampung 20 -->
+    </div>
+</body>
+</html>
